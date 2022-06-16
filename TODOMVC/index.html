@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO MVC </title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0VaH5_dHhdk9fWWZ381-npl7ipBErYCwbw&usqp=CAU" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>todos</h1>
+        <input
+          class="new-todo"
+          placeholder="What needs to be done?"
+          autofocus
+        />
+      </div>
+      <div class="todos">
+        <ul id="ul" class="todo-list">
+            <!-- <li>
+              <input id="checker" class="check-box" type="checkbox" />
+              <label for="todolabel">Mark all as complete</label>
+            </li> -->
+        </ul>
+      </div>
+      <div class="footer">
+        <span class="todo-count"> <strong id="count">0</strong> items left </span>
+        <ul class="filters">
+          <li>
+            <a id="all" class="selected">All</a>
+          </li>
+          <li>
+            <a id="active">Active</a>
+          </li>
+          <li>
+            <a id="completed">Completed</a>
+          </li>
+        </ul>
+        <button class="clear-completed" id="clear-completed">Clear completed</button>
+      </div>
+    </div>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>
